@@ -1,6 +1,8 @@
 
 let i = 0;
+let i2 = 0
 let clsSetInterval;
+let clsSetInterval2;
 
 $(document).ready(function () {
     makeHomeAnimation();
@@ -19,6 +21,26 @@ $(document).ready(function () {
     clsSetInterval = setInterval(() => {
         makeHomeAnimation();
     }, 4000);
+
+
+
+    $('.about .btn_group button').each(function (idx, btn) {
+        $(btn).click(function () {
+            i2 = idx;
+            clearInterval(clsSetInterval2);
+            makeAboutAnimation();
+
+            clsSetInterval2 = setInterval(() => {
+                makeAboutAnimation();
+            }, 5000);
+        })
+    })
+
+    makeAboutAnimation();
+    clsSetInterval2 = setInterval(() => {
+        i2++;
+        makeAboutAnimation();
+    }, 5000);
 })
 
 function makeHomeAnimation () {
@@ -42,4 +64,37 @@ function makeHomeAnimation () {
     } else {
         i = 0;
     }
+}
+
+function makeAboutAnimation () {
+    if (i2 == 6) {
+        i2 = 0;
+    }
+
+    $('.about_gif').each(function (idx, el) {
+        if (el.classList.contains('active')) {
+            $(el).removeClass('active');
+            $(el).addClass('end_active');
+            setTimeout(() => {
+                $(el).removeClass('end_active');
+            }, 500);
+        }
+    })
+    $($('.about_gif')[i2]).addClass('active')
+
+    $('.about .btn_group button').each(function (idx, el) {
+        if (el.classList.contains('active')) {
+            $(el).removeClass('active');
+            $(el).addClass('end_active');
+            setTimeout(() => {
+                $(el).removeClass('end_active');
+            }, 400);
+        }
+    })
+    $($('.about .btn_group button')[i2]).addClass('active');
+
+    $('.about .border_bottom').removeClass('active');
+    setTimeout(() => {
+        $('.about .border_bottom').addClass('active');
+    }, 500);
 }
