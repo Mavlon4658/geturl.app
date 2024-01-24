@@ -5,6 +5,21 @@ let clsSetInterval;
 let clsSetInterval2;
 
 $(document).ready(function () {
+    $('header .bars').click(function () {
+        $('.mobile_menu').removeClass('end_active');
+        $('.mobile_menu').addClass('active');
+    })
+
+    $('.mobile_menu__close').click(function () {
+        $('.mobile_menu').removeClass('active');
+        $('.mobile_menu').addClass('end_active');
+    })
+    
+    $('.mobile_menu__bg').click(function () {
+        $('.mobile_menu').removeClass('active');
+        $('.mobile_menu').addClass('end_active');
+    })
+
     makeHomeAnimation();
     $('.home_slider_btn').each(function (idx, btn) {
         $(btn).click(function () {
@@ -21,8 +36,6 @@ $(document).ready(function () {
     clsSetInterval = setInterval(() => {
         makeHomeAnimation();
     }, 4000);
-
-
 
     $('.about .btn_group button').each(function (idx, btn) {
         $(btn).click(function () {
