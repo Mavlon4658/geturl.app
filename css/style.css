@@ -150,6 +150,10 @@ header .auth_block {
   align-items: center;
   gap: 12px;
 }
+header button.theme svg {
+  width: 22px;
+  height: auto;
+}
 
 .home {
   background-image: url("../images/home_bg.png");
@@ -799,6 +803,7 @@ header .auth_block {
 .rates {
   border-radius: 72px 72px 0px 0px;
   background: #8F4CF8;
+  position: relative;
 }
 .rates .main_container {
   padding-top: 77px;
@@ -914,4 +919,167 @@ footer .text {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    border-radius: 24px 24px 0px 0px;
+    padding-top: 32px;
+  }
+  .about .title {
+    text-align: left;
+    font-size: 36px;
+  }
+  .about .title span::before {
+    width: 128px;
+    border-radius: 50px;
+  }
+  .about .title span::after {
+    height: 44px;
+    border-radius: 50px;
+    width: 133px;
+  }
+  .about .description {
+    text-align: left;
+    font-size: 14px;
+    color: #0D0D0D;
+    margin-bottom: 8px;
+  }
+  .about .gif_wrap {
+    text-align: center;
+    position: relative;
+    height: 232px;
+  }
+  .about .about_gif {
+    width: 232px;
+    height: 232px;
+  }
+  .about .about_content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px 12px;
+  }
+  .about .about_content .btn_group {
+    width: 100%;
+    gap: 8px;
+  }
+  .about .about_content .btn_group button {
+    font-size: 14px;
+  }
+  .about .about_content .line {
+    height: 1px;
+    width: 100%;
+    position: static;
+  }
+  .about .about_content .line_wrap {
+    height: 1px;
+    width: 100%;
+  }
+  .about .about_content p {
+    width: 100%;
+    font-size: 14px;
+    color: rgba(13, 13, 13, 0.45);
+  }
+  .help {
+    border-radius: 0px 0px 24px 24px;
+  }
+  .help .main_container {
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+  .help h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 17px;
+  }
+  .help h2 span {
+    padding: 0px 12px;
+    border-radius: 24px;
+  }
+  .help .cards {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .help .cards .card_item {
+    width: 100%;
+    padding: 12px 24px 12px;
+    gap: 12px;
+  }
+  .help .cards .card_item .img {
+    width: 56px;
+    height: 56px;
+  }
+  .help .cards .card_item .img img {
+    transform: scale(0.7);
+  }
+  .help .cards .card_item .title {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .help .cards .card_item p {
+    font-size: 13px;
+  }
+  .work {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 76px 0;
+  }
+  .work .main_img {
+    width: 152px;
+  }
+  .work h2 {
+    font-size: 24px;
+    width: 231px;
+    margin: 0 auto 12px;
+  }
+  .work p {
+    font-size: 14px;
+    width: 231px;
+    margin: 0 auto 16px;
+  }
+  .rates {
+    border-radius: 24px 24px 0px 0px;
+  }
+  .rates .main_container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .rates h2 {
+    font-size: 32px;
+  }
+  .rates p {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    max-width: 247px;
+  }
+  .rates .rates_bg {
+    position: absolute;
+    right: 0;
+    top: 123px;
+    width: 73px;
+    height: 469px;
+    opacity: 0.5;
+    z-index: 2;
+    background: linear-gradient(270deg, #8F4CF8 0%, rgba(143, 76, 248, 0) 100%);
+  }
+  .rates .rates_list_wrap {
+    overflow-x: scroll;
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
+    padding: 0 20px;
+    position: relative;
+  }
+  .rates .rates_list_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .rates_list {
+    gap: 8px;
+    width: 883px;
+  }
+  .rates_list .list_item {
+    width: calc(33.3333333333% - 5.3333333333px);
+  }
 }/*# sourceMappingURL=style.css.map */

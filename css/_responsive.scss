@@ -1,0 +1,200 @@
+@media only screen and (max-width: 768px) {
+    .about {
+        border-radius: 24px 24px 0px 0px;
+        padding-top: 32px;
+
+        .title {
+            text-align: left;
+            font-size: 36px;
+
+            span {
+                &::before {
+                    width: 128px;
+                    border-radius: 50px;
+                }
+
+                &::after {
+                    height: 44px;
+                    border-radius: 50px;
+                    width: 133px;
+                }
+            }
+        }
+
+        .description {
+            text-align: left;
+            font-size: 14px;
+            color: #0D0D0D;
+            margin-bottom: 8px;
+        }
+
+        .gif_wrap {
+            text-align: center;
+            position: relative;
+            height: 232px;
+        }
+
+        .about_gif {
+            width: 232px;
+            height: 232px;
+        }
+
+        .about_content {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 18px 12px;
+
+            .btn_group {
+                width: 100%;
+                gap: 8px;
+
+                button {
+                    font-size: 14px;
+                }
+            }
+
+            .line {
+                height: 1px;
+                width: 100%;
+                position: static;
+
+                &_wrap {
+                    height: 1px;
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 100%;
+                font-size: 14px;
+                color: rgba(13, 13, 13, 0.45);
+            }
+        }
+    }
+
+    .help {
+        border-radius: 0px 0px 24px 24px ;
+
+        .main_container {
+            padding-top: 8px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 17px;
+
+            span {
+                padding: 0px 12px;
+                border-radius: 24px;
+            }
+        }
+
+        .cards {
+            flex-direction: column;
+            gap: 12px;
+
+            .card_item {
+                width: 100%;
+                padding: 12px 24px 12px;
+                gap: 12px;
+
+                .img {
+                    width: 56px;
+                    height: 56px;
+
+                    img {
+                        transform: scale(.7);
+                    }
+                }
+
+                .title {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .work {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 76px 0;
+
+        .main_img {
+            width: 152px;
+        }
+
+        h2 {
+            font-size: 24px;
+            width: 231px;
+            margin: 0 auto 12px;
+        }
+
+        p {
+            font-size: 14px;
+            width: 231px;
+            margin: 0 auto 16px;
+        }
+    }
+
+    .rates {
+        border-radius: 24px 24px 0px 0px;
+
+        .main_container {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            max-width: 247px;
+        }
+
+        .rates_bg {
+            position: absolute;
+            right: 0;
+            top: 123px;
+            width: 73px;
+            height: 469px;
+            opacity: 0.5;
+            z-index: 2;
+            background: linear-gradient(270deg, #8F4CF8 0%, rgba(143, 76, 248, 0.00) 100%);
+        }
+
+        .rates_list_wrap {
+            overflow-x: scroll;
+            width: calc(100% + 40px);
+            transform: translateX(-20px);
+            padding: 0 20px;
+            position: relative;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+        }
+
+        &_list {
+            gap: 8px;
+            width: 883px;
+
+            .list_item {
+                width: calc(100% / 3 - 16px / 3);
+            }
+        }
+    }
+}

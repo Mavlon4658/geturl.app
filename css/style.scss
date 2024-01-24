@@ -170,6 +170,13 @@ header {
         align-items: center;
         gap: 12px;
     }
+
+    button.theme {
+        svg {
+            width: 22px;
+            height: auto;
+        }
+    }
 }
 // Header end
 
@@ -906,6 +913,7 @@ header {
 .rates {
     border-radius: 72px 72px 0px 0px;
     background: #8F4CF8;
+    position: relative;
 
     .main_container {
         padding-top: 77px;
@@ -1040,3 +1048,5 @@ footer {
     }
 }
 // Footer end
+
+@import 'responsive';
