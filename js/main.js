@@ -88,6 +88,29 @@ function makeHomeAnimation () {
     $('.home_slider_btn').removeClass('active');
     $($('.home_slider_btn')[i]).addClass('active');
 
+    $('.text_animation .number li').each(function (idx, el) {
+        if (el == $('.text_animation .number li')[i]) {
+            $(el).css({
+                opacity: '0.15',
+            })
+        } else {
+            $(el).css({
+                opacity: '0',
+            })
+        }
+    })
+
+    $('.text_animation .title li').each(function (idx, el) {
+        if (el == $('.text_animation .title li')[i]) {
+            $(el).css({
+                opacity: '1',
+            })
+        } else {
+            $(el).css({
+                opacity: '0',
+            })
+        }
+    })
 
     if (i < 5) {
         i++;

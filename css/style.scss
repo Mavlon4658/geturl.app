@@ -242,7 +242,7 @@ header {
     .number {
         position: relative;
         height: 28px;
-        overflow: hidden;
+        // overflow: hidden;
         padding-top: 3px;
         display: flex;
         flex-direction: column;
@@ -277,11 +277,11 @@ header {
         transform: translateY(-18px);
         padding-top: 14px;
         gap: 14px;
-        overflow: hidden;
+        // overflow: hidden;
         
         li {
             transform: translateY(0);
-            transition: .6s ease-in all;
+            transition: .6s ease-in transition;
             color: #FFF;
             padding-right: 20px;
             font-size: 96px;
@@ -289,6 +289,7 @@ header {
             line-height: normal;
             text-transform: uppercase;
             font-family: "Random Grotesque Standard Semibold", sans-serif;
+            opacity: 0;
         }
     }
 

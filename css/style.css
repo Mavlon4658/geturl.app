@@ -186,7 +186,6 @@ header button.bars {
 .home .number {
   position: relative;
   height: 28px;
-  overflow: hidden;
   padding-top: 3px;
   display: flex;
   flex-direction: column;
@@ -229,11 +228,10 @@ header button.bars {
   transform: translateY(-18px);
   padding-top: 14px;
   gap: 14px;
-  overflow: hidden;
 }
 .home .title li {
   transform: translateY(0);
-  transition: 0.6s ease-in all;
+  transition: 0.6s ease-in transition;
   color: #FFF;
   padding-right: 20px;
   font-size: 96px;
@@ -241,6 +239,7 @@ header button.bars {
   line-height: normal;
   text-transform: uppercase;
   font-family: "Random Grotesque Standard Semibold", sans-serif;
+  opacity: 0;
 }
 .home .title.active_0 li {
   transform: translateY(calc(0 * 117px * -1));
