@@ -699,7 +699,7 @@ header button.bars {
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: #8F4CF8;
   color: #fff;
-  padding: 0 6px;
+  padding: 0 6px 2px;
 }
 .help .cards {
   display: flex;
@@ -1216,7 +1216,7 @@ footer .text {
     margin-bottom: 17px;
   }
   .help h2 span {
-    padding: 0px 12px;
+    padding: 0px 12px 2px;
     border-radius: 24px;
   }
   .help .cards {
