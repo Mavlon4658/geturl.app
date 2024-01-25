@@ -57,6 +57,22 @@ $(document).ready(function () {
 })
 
 function makeHomeAnimation () {
+    if ($('.home .title').hasClass('active_5')) {
+        $('.home .title li').css({
+            transition: '0s ease-in all'
+        })
+        $('.home .number li').css({
+            transition: '0s ease-in all'
+        })
+    } else {
+        $('.home .title li').css({
+            transition: '.6s ease-in all'
+        })
+        $('.home .number li').css({
+            transition: '.6s ease-in all'
+        })
+    }
+
     for (let i = 0; i <= 5; i++) {
         $('.text_animation .number').removeClass('active_' + i);
         $('.text_animation .title').removeClass('active_' + i);
@@ -71,6 +87,7 @@ function makeHomeAnimation () {
     $('.text_animation .title').addClass('active_' + i);
     $('.home_slider_btn').removeClass('active');
     $($('.home_slider_btn')[i]).addClass('active');
+
 
     if (i < 5) {
         i++;
