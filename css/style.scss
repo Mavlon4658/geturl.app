@@ -242,7 +242,7 @@ header {
     .number {
         position: relative;
         height: 28px;
-        // overflow: hidden;
+        overflow: hidden;
         padding-top: 3px;
         display: flex;
         flex-direction: column;
@@ -277,7 +277,7 @@ header {
         transform: translateY(-18px);
         padding-top: 14px;
         gap: 14px;
-        // overflow: hidden;
+        overflow: hidden;
         
         li {
             transform: translateY(0);

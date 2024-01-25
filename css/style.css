@@ -186,6 +186,7 @@ header button.bars {
 .home .number {
   position: relative;
   height: 28px;
+  overflow: hidden;
   padding-top: 3px;
   display: flex;
   flex-direction: column;
@@ -228,6 +229,7 @@ header button.bars {
   transform: translateY(-18px);
   padding-top: 14px;
   gap: 14px;
+  overflow: hidden;
 }
 .home .title li {
   transform: translateY(0);
