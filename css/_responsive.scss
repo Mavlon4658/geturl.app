@@ -1,3 +1,82 @@
+@media only screen and (max-width: 1200px) {
+    .home {
+        h1 {
+            font-size: 72px;
+            text-align: center;
+            margin-left: 0;
+
+            span:nth-child(1) {
+                font-size: 60px;
+            }
+
+            span {
+                margin-left: auto !important;
+            }
+        }
+
+        .text_animation {
+            flex-direction: column;
+            gap: 12px;
+            margin-left: 295px;
+            margin-top: 110px;
+        }
+
+        .home_gif {
+            left: 78px;
+            right: auto;
+            width: 200px;
+            bottom: 287px;
+            -webkit-transition:none !important;
+            -moz-transition:none !important;
+            -o-transition:none !important;
+            transition:none !important;
+        }
+
+        @keyframes gifAnimation2 {}
+        @keyframes gifAnimation3 {}
+
+        .home_gif_4 {
+            height: 200px;
+        }
+
+        img.border {
+            position: absolute;
+            display: block;
+        }
+
+        .broder_top {
+            left: 40px;
+            bottom: 461px;
+        }
+
+        .broder_bottom {
+            right: 40px;
+            bottom: 270px;
+        }
+
+        .title {
+            height: 90px;
+
+            li {
+                font-size: 60px;
+            }
+        }
+
+        @for $i from 0 through 5 {
+            .title.active_#{$i} {
+                li {
+                    transform: translateY(calc(#{$i} * 80px * (-1)));
+                }
+            }
+        }
+
+        .links {
+            margin-bottom: 82px;
+            margin-top: 123px;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     header {
         .navs {
@@ -143,6 +222,57 @@
 
         .mobile_menu__content {
             animation: menuContentEndActive .2s linear 1;
+        }
+    }
+
+    .home {
+        .main_container {
+            padding-top: 70px;
+        }
+
+        h1 {
+            font-size: 55px;
+
+            span:nth-child(1) {
+                font-size: 32px;
+                display: block;
+            }
+        }
+
+        .home_gif {
+            width: 124px;
+        }
+
+        .home_gif_4 {
+            height: 124px;
+        }
+
+        .home_slider {
+            display: none;
+        }
+
+        .title {
+            height: 60px;
+
+            li {
+                font-size: 32px;
+            }
+        }
+
+        @for $i from 0 through 5 {
+            .title.active_#{$i} {
+                li {
+                    transform: translateY(calc(#{$i} * 50px * (-1)));
+                }
+            }
+        }
+
+        img.broder_top{
+            bottom: 400px;
+        }
+
+        .text_animation {
+            margin-left: 220px;
         }
     }
 }
@@ -343,6 +473,82 @@
 
             .list_item {
                 width: calc(100% / 3 - 16px / 3);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home {
+        .home_gif {
+            left: 50px;
+            bottom: 300px;
+        }
+
+        .text_animation {
+            margin-top: 45px;
+            margin-left: 160px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home {
+        .main_container {
+            padding-bottom: 138px;
+        }
+
+        .title {
+            height: 85px;
+            gap: 14px;
+
+            li {
+                width: 154px;
+                font-size: 28px;
+                font-weight: 600;
+                min-height: 64px;
+                line-height: 100%;
+            }
+
+        }
+
+        @for $i from 0 through 5 {
+            .title.active_#{$i} {
+                li {
+                    transform: translateY(calc(#{$i} * 78px * (-1)));
+                }
+            }
+        }
+
+        img.broder_top {
+            bottom: 334px;
+            left: 34.5px;
+        }
+
+        img.broder_bottom {
+            bottom: 230px;
+            right: 34.5px;
+        }
+
+        .home_gif {
+            bottom: 238px;
+        }
+
+        .links {
+            margin-bottom: 0;
+            margin-top: 50px;
+            gap: 10px;
+
+            a {
+                height: 40px;
+                width: calc(50% - 5px);
+                justify-content: center;
+                margin: 0 !important;
+
+                span {
+                    font-size: 14px;
+                    white-space: nowrap;
+                }
             }
         }
     }

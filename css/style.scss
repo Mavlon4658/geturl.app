@@ -278,7 +278,6 @@ header {
 
     .title {
         height: 136px;
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         transform: translateY(-18px);
@@ -337,9 +336,13 @@ header {
 
     .home_gif_2 {
         width: 277px;
-        right: 66px;
-        bottom: 193px;
+        right: -30px;
+        bottom: 150px;
         transform: rotateZ(13deg);
+    }
+
+    img.border {
+        display: none;
     }
 
     @keyframes gifAnimation2 {
@@ -435,7 +438,7 @@ header {
         width: 351.109px;
         transform: rotate(-15.515deg);
         bottom: 150px;
-        right: 70px;
+        right: -50px;
     }
 
     @keyframes gifAnimation6 {
