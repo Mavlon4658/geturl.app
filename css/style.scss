@@ -259,6 +259,7 @@ header {
             transition: .6s ease-in all;
             transform: translateY(0);
             padding-right: 1px;
+
         }
     }
 
@@ -290,6 +291,8 @@ header {
             text-transform: uppercase;
             font-family: "Random Grotesque Standard Semibold", sans-serif;
             opacity: 0;
+            height: 104.8px;
+            border: 1px solid red;
         }
     }
 
