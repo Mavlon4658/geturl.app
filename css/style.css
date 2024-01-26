@@ -244,6 +244,9 @@ header button.bars {
   opacity: 0;
   height: 104.8px;
   border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .home .title.active_0 li {
   transform: translateY(calc(0 * 117px * -1));
