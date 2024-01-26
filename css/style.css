@@ -203,6 +203,10 @@ header button.bars {
   transition: 0.6s ease-in all;
   transform: translateY(0);
   padding-right: 1px;
+  height: 21.6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .home .number.active_0 li {
   transform: translateY(calc(0 * 32px * -1));
@@ -243,7 +247,6 @@ header button.bars {
   font-family: "Random Grotesque Standard Semibold", sans-serif;
   opacity: 0;
   height: 104.8px;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: flex-start;

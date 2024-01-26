@@ -259,7 +259,11 @@ header {
             transition: .6s ease-in all;
             transform: translateY(0);
             padding-right: 1px;
-
+            height: 21.6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            // border: 1px solid red;
         }
     }
 
@@ -292,7 +296,7 @@ header {
             font-family: "Random Grotesque Standard Semibold", sans-serif;
             opacity: 0;
             height: 104.8px;
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             align-items: center;
             justify-content: flex-start;
