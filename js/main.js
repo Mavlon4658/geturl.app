@@ -133,7 +133,9 @@ function makeAboutAnimation () {
             }, 500);
         }
     })
-    $($('.about_gif')[i2]).addClass('active')
+    $($('.about_gif')[i2]).addClass('active');
+    $('.about_content p').removeClass('active');
+    $($('.about_content p')[i2]).addClass('active');
 
     $('.about .btn_group button').each(function (idx, el) {
         if (el.classList.contains('active')) {

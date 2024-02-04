@@ -263,7 +263,6 @@ header {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            // border: 1px solid red;
         }
     }
 
@@ -296,7 +295,6 @@ header {
             font-family: "Random Grotesque Standard Semibold", sans-serif;
             opacity: 0;
             height: 104.8px;
-            // border: 1px solid red;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -762,9 +760,14 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: 128%;
+            display: none;
 
             span {
                 color: #0D0D0D;
+            }
+
+            &.active {
+                display: block;
             }
         }
 
